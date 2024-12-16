@@ -1,0 +1,207 @@
+{
+    "boxes": [
+        {
+            "button": {
+                "text": "Create free account",
+                "theme": "primary",
+                "url": "https://app.comfyform.com/sign/up"
+            },
+            "features": [
+                {
+                    "details": "We do not impose any limits on the number of forms you can create in your account. This allows you to prepare forms in advance for future use and pay only when you truly need to increase the number of submissions.",
+                    "enabled": true,
+                    "text": "Unlimited forms"
+                },
+                {
+                    "details": "You'll receive 50 monthly submissions for free. If you happen to go over that limit, don't worry, we'll still save your submissions for you. However, you'll need to upgrade your subscription to access the content. So, no need to worry about losing your submissions!",
+                    "enabled": true,
+                    "text": "50 monthly submissions"
+                },
+                {
+                    "details": "In the Free plan, you have access to the following security options: Honeypot Field, reCaptcha, and JavaScript Injection.",
+                    "enabled": true,
+                    "text": "3 security options"
+                },
+                {
+                    "details": "Receive email notifications whenever any of your forms are submitted. The email will contain all the data from the respective form.",
+                    "enabled": true,
+                    "text": "Email notifications"
+                },
+                {
+                    "details": "Create a preconfigured message that will be automatically sent to your clients if an email field is present in the form.",
+                    "enabled": true,
+                    "text": "Automatic responses"
+                },
+                {
+                    "details": "You can export all your submissions in either CSV or JSON format at any time.",
+                    "enabled": true,
+                    "text": "Exports to CSV \u0026 JSON"
+                },
+                {
+                    "details": "We take your privacy seriously. All your data are stored on servers in the EU. Read more in our Privacy Policy.",
+                    "enabled": true,
+                    "text": "GDPR-compliant"
+                }
+            ],
+            "heading": "Free",
+            "period": "forever",
+            "price": "$0",
+            "subtext": "No credit card needed. Use it as long as you're fine with basic functions."
+        },
+        {
+            "button": {
+                "text": "Coming soon",
+                "theme": "primary-outline",
+                "url": "https://app.comfyform.com/sign/up"
+            },
+            "features": [
+                {
+                    "details": "In our Standard plan, we provide you with 300 submissions. If you exceed this limit, we will continue to store new submissions, but you will not be able to view their content until you upgrade your subscription.",
+                    "enabled": true,
+                    "text": "300 monthly submissions"
+                },
+                {
+                    "details": "In the Standard plan, you have access to the following security options: Honeypot Field, reCaptcha, JavaScript Injection, Time Trap Field, hCaptcha.",
+                    "enabled": true,
+                    "text": "5 security options"
+                },
+                {
+                    "details": "With our Standard plan, you have the opportunity to attach files to your web form submissions. This feature is particularly useful when you need to request a screenshot of a problem or, for instance, a CV when your website visitor applies for a job.",
+                    "enabled": true,
+                    "text": "File submissions"
+                },
+                {
+                    "details": "This is the size of your cloud storage used for storing the file submissions.",
+                    "enabled": true,
+                    "text": "500 MB file storage"
+                },
+                {
+                    "details": "Seamlessly integrate Comfyform with any other application or solution you are utilizing. Presently, we offer support for HubSpot and Google Sheets, and we have plans to promptly include support for Zapier and Slack.",
+                    "enabled": true,
+                    "text": "All integrations"
+                },
+                {
+                    "details": "We'll stop displaying our branding from all places where you'd be able to see it. No need to turn our branding off, we'll do this automatically for you.",
+                    "enabled": true,
+                    "text": "Without our branding"
+                }
+            ],
+            "heading": "Standard",
+            "period": "month",
+            "pretext": "Everything in Free plus",
+            "price": "$4.99",
+            "subtext": "The best option to start with if you need to scale or receive files."
+        },
+        {
+            "button": {
+                "text": "Coming soon",
+                "theme": "primary-outline",
+                "url": "https://app.comfyform.com/sign/up"
+            },
+            "features": [
+                {
+                    "details": "In our Premium plan, we provide you with 10.000 submissions. If you exceed this limit, we will continue to store new submissions, but you will not be able to view their content until you upgrade your subscription.",
+                    "enabled": true,
+                    "text": "10.000 monthly submissions"
+                },
+                {
+                    "details": "In the Premium plan, you have access to the following security options: Honeypot Field, reCaptcha, JavaScript Injection, Time Trap Field, hCaptcha, Language filter, Location filter.",
+                    "enabled": true,
+                    "text": "7 security options"
+                },
+                {
+                    "details": "Connect your own SMTP server for email notifications sent to you.",
+                    "enabled": true,
+                    "text": "Custom email SMTP server"
+                },
+                {
+                    "details": "We use artificial intelligence to label your submissions by Smart Labels. You'll see the topic of the submission before you even start reading the content.",
+                    "enabled": true,
+                    "text": "AI-driven Smart Labels"
+                },
+                {
+                    "details": "Using advanced AI, we'll prepare for you one possible positive and one negative answer for the form submission, allowing you to send either of them with just a click.",
+                    "enabled": true,
+                    "text": "AI-driven responses"
+                },
+                {
+                    "details": "This is the size of your cloud storage used for storing the file submissions.",
+                    "enabled": true,
+                    "text": "2 GB file storage"
+                }
+            ],
+            "heading": "Premium",
+            "highlighted": true,
+            "period": "month",
+            "pretext": "Everything in Standard plus",
+            "price": "$19.99",
+            "subtext": "Best for larger websites or companies expecting higher protection."
+        },
+        {
+            "button": {
+                "text": "Coming soon",
+                "theme": "primary-outline",
+                "url": "https://app.comfyform.com/sign/up"
+            },
+            "features": [
+                {
+                    "details": "In our Premium plan, we provide you with 50.000 submissions. If you exceed this limit, we will continue to store new submissions, but you will not be able to view their content until you upgrade your subscription.",
+                    "enabled": true,
+                    "text": "50.000 monthly submissions"
+                },
+                {
+                    "details": "In the Elite plan, you have access all our security options: Honeypot Field, reCaptcha, JavaScript Injection, Time Trap Field, hCaptcha, Disposable email filter, Language filter, Location filter, Disposable email filter.",
+                    "enabled": true,
+                    "text": "All 8 security options"
+                },
+                {
+                    "details": "Get notified about important submissions using SMS. You'll be able to display the submission details with just one click and immediately make a call, ensuring you won't miss out on important leads.",
+                    "enabled": true,
+                    "text": "SMS notifications"
+                },
+                {
+                    "details": "This is the size of your cloud storage used for storing the file submissions.",
+                    "enabled": true,
+                    "text": "5 GB file storage"
+                },
+                {
+                    "details": "Connect your internal apps or other solutions to our secured API and access all your data through it. Includes forms, submissions, subscription, and account.",
+                    "enabled": true,
+                    "text": "API (coming soon)"
+                },
+                {
+                    "details": "If our service is not online as promised in the SLA, we will automatically refund you a pro-rata amount.",
+                    "enabled": true,
+                    "text": "Promised SLA 99.995%"
+                }
+            ],
+            "heading": "Elite",
+            "period": "month",
+            "pretext": "Everything in Premium plus",
+            "price": "$49.99",
+            "subtext": "Our high-tier subscription with all of our classy premium features."
+        }
+    ],
+    "enterprise": {
+        "button": {
+            "text": "Get a 1-to-1 demo",
+            "theme": "primary-outline",
+            "url": "https://app.comfyform.com/sign/up"
+        },
+        "heading": "Enterprise",
+        "period": null,
+        "price": "Contact sales",
+        "subtext": "Custom solution for enterprise-grade expectations. Unlimited submissions, custom security options, dedicated storage, tailored AI, exclusive support."
+    },
+    "payg": {
+        "button": {
+            "text": "Coming soon",
+            "theme": "primary-outline",
+            "url": "https://app.comfyform.com/sign/up"
+        },
+        "heading": "Pay-as-you-go",
+        "period": "submission",
+        "price": "$0.19",
+        "subtext": "Get all features included in the Premium plan but only pay per each processed submission. You don't pay for submission that don't bypass your security rules."
+    }
+}

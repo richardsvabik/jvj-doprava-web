@@ -1,0 +1,25 @@
+---
+import { useStoryblokApi } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { staticGetter } from '../pageGetter'
+
+export const getStaticPaths = staticGetter
+
+// @ts-ignore
+// The local 'page' property is defined in middleware.js
+let page = Astro.locals.page
+
+const storyblokApi = useStoryblokApi()
+const { data } = await storyblokApi.get(`cdn/stories/${page.slug}`, {
+    version: import.meta.env.PUBLIC_PRODUCTION ? 'published' : 'draft',
+    resolve_relations: ['header', 'footer', 'subnav'],
+    // resolve_links: 'url',
+})
+
+const { story, rels, links } = data
+---
+
+<BaseLayout {story} {rels} {links} stories={page.stories} lang={page.lang}>
+    <StoryblokComponent blok={story.content} stories={page.stories} />
+</BaseLayout>

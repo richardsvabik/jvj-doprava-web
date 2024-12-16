@@ -1,0 +1,53 @@
+---
+import { Header, Footer } from '../components/organisms'
+import siteConfig from '../site.config'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
+const { story, rels, links, stories } = Astro.props
+const header = rels.find(item => item.uuid === story.content.header) || {}
+const subnav = rels.find(item => item.uuid === story.content.subnav) || {}
+const footer = rels.find(item => item.uuid === story.content.footer) || {}
+const currentPath = Astro.url.pathname
+---
+
+<html lang="cs" class="scroll-smooth">
+    <head>
+        <!-- encoding and browser config -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <style>
+            /* font faces */
+        </style>
+
+        <!-- favicon -->
+
+
+        <!-- SEO: basic -->
+        <title>{story.content.meta_title}</title>
+        <meta name="description" content={story.content.meta_description}>
+        <link rel="canonical" href={siteConfig.baseUrl + currentPath}>
+        <meta name="robots" content={story.content.meta_robots}>
+
+        <!-- SEO: open graph -->
+        <meta property="og:title" content={story.content.meta_title}>
+        <meta property="og:description" content={story.content.meta_description}>
+        <meta property="og:locale" content="cs_CZ">
+        <meta property="og:url" content={siteConfig.baseUrl + currentPath}>
+        {story.content.meta_og_image && 
+            <meta property="og:image" content={`${story.content.meta_og_image.filename}/m/1200x630`}>
+        }
+    </head>
+    <body class="flex flex-col min-h-screen text-slate-800 bg-white h-[300vh]">
+        <Header {...header.content} {links} subnav={subnav?.content} {stories} {currentPath} client:idle />
+        <main>
+            <slot />
+        </main>
+        <Footer {...footer.content} {stories}/>
+    </body>
+</html>
